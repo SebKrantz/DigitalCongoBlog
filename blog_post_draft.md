@@ -101,11 +101,11 @@ The screenshots below show the app in action on the Republic of Congo fiber netw
 
 **Exposure analysis view** — the map shows the fiber network overlaid on the 200-year flood hazard layer, with exposed segments highlighted in red. The bar chart summarizes affected versus unaffected network length. Clicking any segment surfaces its individual properties including length, maximum hazard intensity, and exposure status.
 
-![Screenshot of the Infrastructure Risk Analyzer — Exposure Analysis mode, showing the fiber network around Brazzaville overlaid on flood hazard intensity with a summary bar chart.](images/app_exposure_analysis.png)
+![Screenshot of the Infrastructure Risk Analyzer — Exposure Analysis mode](images/app_exposure_analysis.png)
 
 **Vulnerability analysis view** — with the vulnerability toggle enabled, the user uploads a flood damage curve CSV and enters a fiber replacement cost. The same map now shades each segment by its estimated damage percentage, and the bar chart extends to show estimated total damage cost (USD) alongside exposure and vulnerability rates.
 
-![Screenshot of the Infrastructure Risk Analyzer — Vulnerability Analysis mode, showing per-segment damage estimates and aggregate damage cost, exposure, and vulnerability metrics.](images/app_vulnerability_analysis.png)
+![Screenshot of the Infrastructure Risk Analyzer — Vulnerability Analysis mode](images/app_vulnerability_analysis.png)
 
 ---
 
@@ -115,13 +115,31 @@ The results presented here are for the **100-year return period flood** scenario
 
 ### Exposure
 
-Of the total fiber network length (~4.28 million meters), approximately **729,674 meters — or 17.0%** — fall within the 100-year flood hazard zone under existing climate conditions. Under the SSP5 upper bound, this rises to **794,718 meters (18.6%)**, an 8.9% increase in exposed network length driven by intensification of riverine flooding along the same northern corridor.
+Of the total fiber network length (~4.28 million meters), approximately **729,674 meters — or 17.0%** — fall within the 100-year flood hazard zone under existing climate conditions. Under the SSP5 upper bound, this rises to **794,718 meters (18.6%)**, an 8.9% increase driven by intensification of riverine flooding along the same northern corridor.
 
-![Bar chart showing fiber network exposure under the 100-year flood scenario, existing climate: 729,674 m affected vs. 3,550,789 m unaffected.](results/figures/fiber_flood100y_100mm_exposure_bar.png)
+<table>
+<tr>
+<th>Flood hazard, 100 yr return period, existing climate</th>
+<th>Flood hazard, 100 yr return period, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/fiber_flood100y_100mm_exposure_bar.png" width="100%"/></td>
+<td><img src="results/figures/fiber_flood100y_100mm_exposure_bar_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 The spatial pattern on the exposure map is straightforward. The vast majority of the network runs through terrain with low flood hazard, shown in green. The exposed segments, shown in red, are concentrated in the **north of the country** — particularly in the Sangha and Likoula departments — where the network crosses the extensive wetlands and floodplains of the Congo Basin tributaries. A secondary cluster appears near **Brazzaville**, where the network passes through low-lying areas adjacent to the Congo River.
 
-![Map of the Republic of Congo showing the fiber network with exposed segments (red) and unaffected segments (green), overlaid on the 100-year flood hazard intensity layer, existing climate.](results/figures/fiber_flood100y_100mm_exposure_map.png)
+<table>
+<tr>
+<th>Flood hazard, 100 yr return period, existing climate</th>
+<th>Flood hazard, 100 yr return period, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/fiber_flood100y_100mm_exposure_map.png" width="100%"/></td>
+<td><img src="results/figures/fiber_flood100y_100mm_exposure_map_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 The geographic concentration of risk is a critical finding: the most exposed parts of the backbone are precisely those connecting the capital to the north of the country. These segments already operate with limited redundancy, and repair access during a flood event would be logistically challenging.
 
@@ -129,11 +147,29 @@ The geographic concentration of risk is a critical finding: the most exposed par
 
 Applying the flood depth–damage curve (Nirandjan et al., 2024) to the exposed segments translates physical exposure into estimated economic loss. Under existing climate conditions, a 100-year flood event could cause approximately **$14.8 million in direct fiber damage** — a damage ratio of **38.1%** of total fiber asset value. Under the SSP5 scenario, estimated damage rises to **$16.3 million** (38.0% damage ratio), driven by the higher share of network within the inundation zone.
 
-![Bar chart showing vulnerability analysis results for the 100-year flood, existing climate: estimated damage of $14,814,412, exposure rate of 17.0%, and damage ratio of 38.1%.](results/figures/fiber_flood100y_100mm_vulnerability_bar.png)
+<table>
+<tr>
+<th>Flood hazard, 100 yr return period, existing climate</th>
+<th>Flood hazard, 100 yr return period, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/fiber_flood100y_100mm_vulnerability_bar.png" width="100%"/></td>
+<td><img src="results/figures/fiber_flood100y_100mm_vulnerability_bar_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 The damage ratio accounts for the full distribution of inundation depths along the exposed network, not just whether a segment crosses the threshold. Segments experiencing shallower inundation incur only partial damage, while those in the deep-inundation zones of the northern river systems approach or exceed the 50% damage threshold. The vulnerability map shows this distribution: the orange-red segments in the Likoula and Sangha departments carry the highest per-segment damage estimates.
 
-![Map showing the fiber network colored by vulnerability percentage, overlaid on the 100-year flood hazard layer. The most severely affected segments are concentrated in the northern river basin crossings.](results/figures/fiber_flood100y_100mm_vulnerability_map.png)
+<table>
+<tr>
+<th>Flood hazard, 100 yr return period, existing climate</th>
+<th>Flood hazard, 100 yr return period, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/fiber_flood100y_100mm_vulnerability_map.png" width="100%"/></td>
+<td><img src="results/figures/fiber_flood100y_100mm_vulnerability_map_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 Nearly $15 million in potential fiber damage from a single 100-year flood makes a strong case for why climate risk screening of backbone infrastructure matters. A disruption of this scale would represent a significant direct capital loss and could sever data connectivity for entire northern regions during precisely the periods when emergency coordination and communications are most critical.
 
@@ -147,21 +183,57 @@ Landslides present a different risk profile from flooding. Flood exposure cluste
 
 Under existing climate conditions, **249,364 meters — 5.8%** of the fiber network — traverses terrain with elevated precipitation-triggered landslide susceptibility (class ≥ 1.5 on the CDRI GIRI five-class scale). The SSP5 upper bound produces a modest increase to **252,253 meters (5.9%)**. The small change between scenarios reflects the fact that landslide susceptibility in Congo is driven primarily by topography and soil type, not rainfall variability at the 100-year level.
 
-![Bar chart showing fiber network exposure to landslide hazard, existing climate: 249,364 m affected vs. 4,031,098 m unaffected.](results/figures/fiber_landslides_exposure_bar.png)
+<table>
+<tr>
+<th>Landslide hazard, existing climate</th>
+<th>Landslide hazard, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/fiber_landslides_exposure_bar.png" width="100%"/></td>
+<td><img src="results/figures/fiber_landslides_exposure_bar_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 The exposure map shows landslide-exposed segments concentrated along the elevated terrain in the interior of the country, particularly in the Plateaux and Pool departments, where the network traverses hilly ground on its routes between Brazzaville and the northern regions.
 
-![Map of the Republic of Congo showing the fiber network with landslide-exposed segments highlighted, overlaid on the precipitation-triggered landslide susceptibility layer.](results/figures/fiber_landslides_exposure_map.png)
+<table>
+<tr>
+<th>Landslide hazard, existing climate</th>
+<th>Landslide hazard, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/fiber_landslides_exposure_map.png" width="100%"/></td>
+<td><img src="results/figures/fiber_landslides_exposure_map_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 ### Vulnerability
 
 Applying a step-function damage curve calibrated to landslide susceptibility classes, we estimate **$3.33 million in potential direct fiber damage** under existing climate conditions — a damage ratio of **22.6%** of total fiber asset value. Under the SSP5 scenario, this rises marginally to **$3.37 million** (22.6% damage ratio), consistent with the negligible change in susceptibility patterns between scenarios.
 
-![Bar chart showing vulnerability analysis results for landslide hazard, existing climate: estimated damage of $3,333,903, exposure rate of 5.8%, and damage ratio of 22.6%.](results/figures/fiber_landslides_vulnerability_bar.png)
+<table>
+<tr>
+<th>Landslide hazard, existing climate</th>
+<th>Landslide hazard, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/fiber_landslides_vulnerability_bar.png" width="100%"/></td>
+<td><img src="results/figures/fiber_landslides_vulnerability_bar_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 The combination of flood and landslide risk matters most for the segments connecting Brazzaville to the north: these sections face compound exposure from both hazard types, are the hardest to repair quickly, and carry the only backbone connectivity for large areas of the country. A failure during a flood or landslide event could have cascading effects on mobile network backhaul, emergency services, and financial transactions in affected departments.
 
-![Map showing the fiber network colored by landslide vulnerability percentage. Elevated damage ratios appear along the interior plateau corridors.](results/figures/fiber_landslides_vulnerability_map.png)
+<table>
+<tr>
+<th>Landslide hazard, existing climate</th>
+<th>Landslide hazard, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/fiber_landslides_vulnerability_map.png" width="100%"/></td>
+<td><img src="results/figures/fiber_landslides_vulnerability_map_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 ---
 
@@ -173,11 +245,29 @@ Congo's 1,594 mobile tower sites face a different risk geometry than the fiber b
 
 Under existing climate, **188 of the 1,594 tower sites — 11.8%** — exceed the 100 mm inundation threshold under a 100-year flood. The SSP5 scenario produces a somewhat counterintuitive result: exposed sites fall to **171 (10.7%)** rather than rising as they do for the fiber backbone. Several sites sit close to the 100 mm threshold, and under the SSP5 hazard layer their projected depths fall just below it rather than above, illustrating how binary exposure classification behaves for point assets near hazard gradients.
 
-![Bar chart showing mobile tower network exposure under the 100-year flood scenario, existing climate: 188 towers affected (11.8%) vs. 1,406 unaffected.](results/figures/towers_flood100y_100mm_exposure_bar.png)
+<table>
+<tr>
+<th>Flood hazard, 100 yr return period, existing climate</th>
+<th>Flood hazard, 100 yr return period, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/towers_flood100y_100mm_exposure_bar.png" width="100%"/></td>
+<td><img src="results/figures/towers_flood100y_100mm_exposure_bar_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 Spatially, exposed towers cluster in the same areas identified for the fiber backbone: the **northern Sangha and Likouala departments**, where towers sit within the Congo River tributary floodplains, and a secondary concentration near **Brazzaville** along the river crossing. Tower sites in Pointe-Noire, Niari, and Bouenza are largely unaffected.
 
-![Map of the Republic of Congo showing mobile tower locations, with exposed sites (red) and unaffected sites (green) overlaid on the 100-year flood hazard intensity layer, existing climate.](results/figures/towers_flood100y_100mm_exposure_map.png)
+<table>
+<tr>
+<th>Flood hazard, 100 yr return period, existing climate</th>
+<th>Flood hazard, 100 yr return period, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/towers_flood100y_100mm_exposure_map.png" width="100%"/></td>
+<td><img src="results/figures/towers_flood100y_100mm_exposure_map_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 ### Vulnerability
 
@@ -185,9 +275,27 @@ Applying the flood depth–damage curve to the exposed tower sites, we estimate 
 
 Under SSP5, estimated damage falls to **USD 6.0 million**, with 10.7% of sites exposed and a damage ratio of **34.4%**. This decrease mirrors the reduction in exposed site count and again reflects threshold-sensitivity for point assets rather than any genuine reduction in underlying flood hazard.
 
-![Bar chart showing tower vulnerability analysis results, 100-year flood, existing climate: 188 towers affected, damage ratio 45.6%, estimated damage USD 8,620,528.](results/figures/towers_flood100y_100mm_vulnerability_bar.png)
+<table>
+<tr>
+<th>Flood hazard, 100 yr return period, existing climate</th>
+<th>Flood hazard, 100 yr return period, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/towers_flood100y_100mm_vulnerability_bar.png" width="100%"/></td>
+<td><img src="results/figures/towers_flood100y_100mm_vulnerability_bar_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
-![Map showing mobile tower sites colored by damage ratio, overlaid on the 100-year flood hazard layer. The most severely affected sites are in the northern river basin departments.](results/figures/towers_flood100y_100mm_vulnerability_map.png)
+<table>
+<tr>
+<th>Flood hazard, 100 yr return period, existing climate</th>
+<th>Flood hazard, 100 yr return period, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/towers_flood100y_100mm_vulnerability_map.png" width="100%"/></td>
+<td><img src="results/figures/towers_flood100y_100mm_vulnerability_map_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 ---
 
@@ -199,9 +307,27 @@ Landslide susceptibility affects a smaller share of the tower network than flood
 
 Exposed towers are distributed across the elevated interior of the country — concentrated in the **Pool, Bouenza, and Niari departments** in the south, including the corridor approaching Pointe-Noire, with a smaller number scattered across the northern uplands. The pattern is more geographically dispersed than flood exposure, which is anchored to identifiable river floodplains.
 
-![Bar chart showing mobile tower network landslide exposure, existing climate: 76 towers affected (4.8%) vs. 1,518 unaffected.](results/figures/towers_landslides_exposure_bar.png)
+<table>
+<tr>
+<th>Landslide hazard, existing climate</th>
+<th>Landslide hazard, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/towers_landslides_exposure_bar.png" width="100%"/></td>
+<td><img src="results/figures/towers_landslides_exposure_bar_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
-![Map of the Republic of Congo showing mobile tower sites with landslide-exposed locations highlighted. Exposed sites are distributed across hilly terrain in the interior.](results/figures/towers_landslides_exposure_map.png)
+<table>
+<tr>
+<th>Landslide hazard, existing climate</th>
+<th>Landslide hazard, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/towers_landslides_exposure_map.png" width="100%"/></td>
+<td><img src="results/figures/towers_landslides_exposure_map_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 ### Vulnerability
 
@@ -209,9 +335,27 @@ The step-function damage curve applied to landslide susceptibility classes yield
 
 Flood risk affects a larger share of the tower network, but the damage ratio on landslide-exposed sites is comparable — towers in high-susceptibility zones face severe consequences when affected. The dispersed geographic pattern of landslide risk, unlike the northern concentration of flood risk, means that reducing it requires network-wide attention to site resilience rather than targeted interventions at a handful of identifiable locations.
 
-![Bar chart showing tower landslide vulnerability results, existing climate: 76 towers affected, damage ratio 27.0%, estimated damage USD 2,050,000.](results/figures/towers_landslides_vulnerability_bar.png)
+<table>
+<tr>
+<th>Landslide hazard, existing climate</th>
+<th>Landslide hazard, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/towers_landslides_vulnerability_bar.png" width="100%"/></td>
+<td><img src="results/figures/towers_landslides_vulnerability_bar_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
-![Map showing mobile tower sites colored by landslide damage ratio. Elevated damage estimates appear across hilly interior terrain.](results/figures/towers_landslides_vulnerability_map.png)
+<table>
+<tr>
+<th>Landslide hazard, existing climate</th>
+<th>Landslide hazard, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/towers_landslides_vulnerability_map.png" width="100%"/></td>
+<td><img src="results/figures/towers_landslides_vulnerability_map_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 ---
 
@@ -223,11 +367,29 @@ We assessed Congo's seven datacenter sites for exposure to the 100-year riverine
 
 **3 of the 7 sites (43%)** exceed the inundation threshold under existing climate. Under SSP5, the result does not change: the same 3 sites remain exposed. This contrasts with the fiber and tower results, where the SSP5 hazard layer shifts which assets cross the threshold. For datacenters, both the number and the identity of the exposed sites are stable across both scenarios.
 
-![Bar chart showing datacenter flood exposure under existing climate: 3 sites affected (43%), 4 unaffected (57%).](results/figures/datacenters_flood100y_100mm_exposure_bar.png)
+<table>
+<tr>
+<th>Flood hazard, 100 yr return period, existing climate</th>
+<th>Flood hazard, 100 yr return period, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/datacenters_flood100y_100mm_exposure_bar.png" width="100%"/></td>
+<td><img src="results/figures/datacenters_flood100y_100mm_exposure_bar_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 All three exposed sites are in the **Brazzaville area**, close to the Congo River. Of the four datacenter sites around Brazzaville, three sit near the riverbank and are exposed; the fourth, set back from the river, is not. The two datacenter sites in Pointe-Noire and the planned backup site in Oyo show no flood exposure under either scenario.
 
-![Map showing datacenter sites across Congo, with exposed sites (red) and unexposed sites (green) overlaid on the 100-year flood hazard intensity layer.](results/figures/datacenters_flood100y_100mm_exposure_map.png)
+<table>
+<tr>
+<th>Flood hazard, 100 yr return period, existing climate</th>
+<th>Flood hazard, 100 yr return period, SSP5 upper bound</th>
+</tr>
+<tr>
+<td><img src="results/figures/datacenters_flood100y_100mm_exposure_map.png" width="100%"/></td>
+<td><img src="results/figures/datacenters_flood100y_100mm_exposure_map_SSP5.png" width="100%"/></td>
+</tr>
+</table>
 
 The analysis for datacenters covers exposure only. Depth-damage curves and replacement cost estimates for datacenter facilities were not available for this study, so we do not provide damage or financial loss estimates for the exposed sites. We also checked all seven sites against the landslide susceptibility threshold; none exceed it under either scenario, so we do not include a landslide section for datacenters.
 
