@@ -86,7 +86,7 @@ The damage is calculated per asset segment (for fiber, per intersecting route se
 
 ## The Infrastructure Risk Analyzer
 
-To make this analysis operational — and replicable across countries and future datasets — we built the **Infrastructure Risk Analyzer**, a full-stack web application that automates the entire exposure-to-damage workflow.
+To make this analysis operational — and replicable across countries and future datasets — we built the **[Infrastructure Risk Analyzer](https://datanalytics.worldbank.org/infra-risk-analyzer/)**, a full-stack web application that automates the entire exposure-to-damage workflow.
 
 The application allows a user to:
 1. Upload an infrastructure dataset (GeoPackage or shapefile — lines for fiber, points for towers)
@@ -411,7 +411,7 @@ The **northern backbone corridor** (Sangha and Likoula departments) carries the 
 
 The **SSP5 climate change scenarios** produce a meaningful but not dramatic amplification of risk for the fiber network — roughly a 2-percentage-point increase in flood exposure (17% to 19%) and a $1.5 million increase in estimated flood damage. For the tower network, the SSP5 effect on flood exposure is slightly negative (a threshold-sensitivity artifact), while landslide risk is nearly unchanged. The overall picture is that baseline exposure is already substantial and warrants near-term investment, with the climate signal justifying resilience margins for new infrastructure.
 
-The **Infrastructure Risk Analyzer** is worth noting beyond this single country. We are already adapting the approach for use in East Africa. By automating the full exposure-to-damage pipeline, the tool makes it feasible to replicate or update this analysis as infrastructure inventories improve, new hazard products become available, or the methodology extends to additional asset types.
+The **[Infrastructure Risk Analyzer](https://datanalytics.worldbank.org/infra-risk-analyzer/)** is available as a public web tool — no GIS software or programming required. Upload an infrastructure dataset, select a hazard layer and threshold, and the app returns an interactive exposure map and summary chart in seconds. With an optional damage curve and replacement cost, it extends to full financial loss estimates. We are already adapting the approach for use in East Africa, and the tool is designed to be reused as infrastructure inventories improve or new hazard products become available. If you work on infrastructure resilience in a similar context, we encourage you to try it.
 
 We will present the full diagnostic report, including a synthesis of investment priorities and methodology documentation, at a stakeholder workshop in mid-2026.
 
