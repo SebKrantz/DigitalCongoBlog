@@ -1,0 +1,14 @@
+title: Digital Congo Blog
+description: >
+  A World Bank QII Partnership analysis of climate hazard exposure
+  for digital infrastructure in the Republic of Congo — fiber backbone,
+  mobile towers, datacenters, and submarine cable landing stations.
+author: Sebastian Krantz & Thomas Birk
+
+theme: minima
+
+minima:
+  skin: classic
+
+plugins:
+  - jekyll-feed
