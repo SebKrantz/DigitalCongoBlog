@@ -11,7 +11,7 @@ Digital infrastructure is the backbone of modern economies — but that backbone
 
 The Republic of Congo faces two vulnerabilities that rarely receive enough joint attention: high climate risk and a rapidly expanding, yet fragile, digital ecosystem.
 
-On the climate side, the picture is stark. Congo ranks among the most exposed countries on the Notre Dame Global Adaptation Initiative (ND-GAIN) index — 166th out of 182 countries — with limited institutional capacity to respond. The country's varied topography — coastal plains around Pointe-Noire, dense river basins threading north toward the Congo River, and elevated plateaus in the centre — creates exposure to a wide range of hazards. Seasonal flooding hits all departments with regularity. The Likoula and Sangha regions in the north are particularly prone to riverine inundation, while Brazzaville and Pointe-Noire face urban flooding amplified by inadequate drainage. Landslides threaten infrastructure along road and rail corridors in hilly terrain, and the coastal zone around Pointe-Noire is exposed to storm surge and long-term sea-level rise.
+On the climate side, the picture is stark. Congo ranks among the most exposed countries on the Notre Dame Global Adaptation Initiative (ND-GAIN) index — 166th out of 182 countries — with limited institutional capacity to respond. The country's varied topography — coastal plains around Pointe-Noire, dense river basins threading north toward the Congo River, and elevated plateaus in the centre — creates exposure to a wide range of hazards. Seasonal flooding hits all departments with regularity. The Likouala and Sangha regions in the north are particularly prone to riverine inundation, while Brazzaville and Pointe-Noire face urban flooding amplified by inadequate drainage. Landslides threaten infrastructure along road and rail corridors in hilly terrain, and the coastal zone around Pointe-Noire is exposed to storm surge and long-term sea-level rise.
 
 <table>
 <tr>
@@ -37,7 +37,7 @@ On the climate side, the picture is stark. Congo ranks among the most exposed co
 </tr>
 </table>
 
-*Left: Residents wade through flooded streets in Kinshasa after torrential rains in April 2025 overwhelmed the Ndjili River, killing at least 33 people. Photo: Samy Ntumba Shambuyi/AP. Right: A massive landslide tears apart a hillside road in Kinshasa after heavy rains on 12–13 December 2022, killing over 160 people and destroying hundreds of homes. Photo: Government of DRC, Copernicus Emergency Management Service.*
+*These recent events in Kinshasa, directly across Pool Malebo from Brazzaville, illustrate the same regional hazard dynamics affecting the Congo River urban corridor. Left: Residents wade through flooded streets in Kinshasa after torrential rains in April 2025 overwhelmed the Ndjili River, killing at least 33 people. Photo: Samy Ntumba Shambuyi/AP. Right: A massive landslide tears apart a hillside road in Kinshasa after heavy rains on 12–13 December 2022, killing over 160 people and destroying hundreds of homes. Photo: Government of DRC, Copernicus Emergency Management Service.*
 
 <table>
 <tr>
@@ -66,7 +66,7 @@ A risk analysis is only as good as its underlying data. Assembling infrastructur
 
 **Fiber-optic network.** We have obtained the national fiber network from the telecommunications regulator (ARPCE), covering both existing and planned routes. This gives us a georeferenced picture of the backbone and middle-mile network running across the country — the data underlying all the fiber analysis in this post.
 
-**Mobile towers.** We have secured cell tower location data from the two main operators, Airtel Congo and MTN Congo, for a combined total of **1,594 tower sites** across the country. Together these cover the bulk of 3G and 4G connectivity, concentrated in Brazzaville and Pointe-Noire but with significant presence along major corridors.
+**Mobile towers.** We have secured cell tower location data from the two main operators, Airtel Congo and MTN Congo, and supplemented it with Congo Telecom and Helios records. The deduplicated inventory contains **1,594 tower sites** across the country; the overview map below plots the **1,539 records** retained after status and geocode filtering. Together these cover the bulk of 3G and 4G connectivity, concentrated in Brazzaville and Pointe-Noire but with significant presence along major corridors.
 
 **Datacenter facilities and submarine cable landing stations.** The analysis also covers Congo's seven datacenter sites and the two submarine cable landing stations — the WACS station and the 2Africa station — both located in Loango on the coast near Pointe-Noire.
 
@@ -85,7 +85,7 @@ A risk analysis is only as good as its underlying data. Assembling infrastructur
 </tr>
 </table>
 
-*Left: Fiber-optic cable and orange conduit pipes being laid in an open trench — the standard technique for burying backbone infrastructure. Congo's ~3,000 km Programme Câble National (PCN) was built using similar underground duct methods. Photo: Rubin Observatory/NSF/AURA, CC BY 4.0. Right: An MTN macro cell tower mast; MTN Congo and Airtel Congo together account for the 1,594 tower sites analyzed in this study. Photo: Anasskoko, CC BY-SA 4.0.*
+*Left: Fiber-optic cable and orange conduit pipes being laid in an open trench — the standard technique for burying backbone infrastructure. Congo's ~3,000 km Programme Câble National (PCN) was built using similar underground duct methods. Photo: Rubin Observatory/NSF/AURA, CC BY 4.0. Right: An MTN macro cell tower mast; the tower analysis uses 1,594 sites compiled from operator and infrastructure records. Photo: Anasskoko, CC BY-SA 4.0.*
 
 **Hazard layers.** All hazard data is sourced from the **CDRI Global Infrastructure Risk Index (GIRI)** portal, which provides high-resolution, probabilistic global hazard maps. We use two hazard types across multiple scenarios:
 
@@ -130,7 +130,7 @@ The vulnerability curves account for uncertainty: a baseline curve is used along
 The damage is calculated per asset segment (for fiber, per intersecting route segment; for towers, per site), then aggregated to the national level. The outputs are:
 - Total estimated direct damage cost (USD)
 - The overall exposure rate (% of network within the hazard zone)
-- The overall damage ratio (% of asset value damaged, accounting for partial damage at lower intensity levels)
+- The average damage ratio across affected assets or segments, accounting for partial damage at lower intensity levels
 - A map showing the spatial distribution of damage costs or vulnerability percentages
 
 ---
@@ -150,7 +150,7 @@ What makes the tool practical is that the full pipeline runs automatically. Unli
 
 The screenshots below show the app in action on the Republic of Congo fiber network dataset.
 
-**Exposure analysis view** — the map shows the fiber network overlaid on the 200-year flood hazard layer, with exposed segments highlighted in red. The bar chart summarizes affected versus unaffected network length. Clicking any segment surfaces its individual properties including length, maximum hazard intensity, and exposure status.
+**Exposure analysis view** — the map shows the fiber network overlaid on a flood hazard layer, with exposed segments highlighted in red. The bar chart summarizes affected versus unaffected network length. Clicking any segment surfaces its individual properties including length, maximum hazard intensity, and exposure status.
 
 ![Screenshot of the Infrastructure Risk Analyzer — Exposure Analysis mode](images/app_exposure_analysis.png)
 
@@ -179,7 +179,7 @@ Of the total fiber network length (~4.28 million meters), approximately **729,67
 </tr>
 </table>
 
-The spatial pattern on the exposure map is straightforward. The vast majority of the network runs through terrain with low flood hazard, shown in green. The exposed segments, shown in red, are concentrated in the **north of the country** — particularly in the Sangha and Likoula departments — where the network crosses the extensive wetlands and floodplains of the Congo Basin tributaries. A secondary cluster appears near **Brazzaville**, where the network passes through low-lying areas adjacent to the Congo River.
+The spatial pattern on the exposure map is straightforward. The vast majority of the network runs through terrain with low flood hazard, shown in green. The exposed segments, shown in red, are concentrated in the **north of the country** — particularly in the Sangha and Likouala departments — where the network crosses the extensive wetlands and floodplains of the Congo Basin tributaries. A secondary cluster appears near **Brazzaville**, where the network passes through low-lying areas adjacent to the Congo River.
 
 <table>
 <tr>
@@ -196,7 +196,7 @@ The geographic concentration of risk is a critical finding: the most exposed par
 
 ### Vulnerability
 
-Applying the flood depth–damage curve (Nirandjan et al., 2024) to the exposed segments translates physical exposure into estimated economic loss. Under existing climate conditions, a 100-year flood event could cause approximately **$14.8 million in direct fiber damage** — a damage ratio of **38.1%** of total fiber asset value. Under the SSP5 scenario, estimated damage rises to **$16.3 million** (38.0% damage ratio), driven by the higher share of network within the inundation zone.
+Applying the flood depth–damage curve (Nirandjan et al., 2024) to the exposed segments translates physical exposure into estimated economic loss. Under existing climate conditions, a 100-year flood event could cause approximately **$14.8 million in direct fiber damage**, with an average damage ratio of **38.1% across affected fiber segments**. Under the SSP5 scenario, estimated damage rises to **$16.3 million** (38.0% affected-segment damage ratio), driven by the higher share of network within the inundation zone.
 
 <table>
 <tr>
@@ -209,7 +209,7 @@ Applying the flood depth–damage curve (Nirandjan et al., 2024) to the exposed 
 </tr>
 </table>
 
-The damage ratio accounts for the full distribution of inundation depths along the exposed network, not just whether a segment crosses the threshold. Segments experiencing shallower inundation incur only partial damage, while those in the deep-inundation zones of the northern river systems approach or exceed the 50% damage threshold. The vulnerability map shows this distribution: the orange-red segments in the Likoula and Sangha departments carry the highest per-segment damage estimates.
+The damage ratio accounts for the full distribution of inundation depths along the exposed network, not just whether a segment crosses the threshold. Segments experiencing shallower inundation incur only partial damage, while those in the deep-inundation zones of the northern river systems approach or exceed the 50% damage threshold. The vulnerability map shows this distribution: the orange-red segments in the Likouala and Sangha departments carry the highest per-segment damage estimates.
 
 <table>
 <tr>
@@ -260,7 +260,7 @@ The exposure map shows landslide-exposed segments concentrated along the elevate
 
 ### Vulnerability
 
-Applying a step-function damage curve calibrated to landslide susceptibility classes, we estimate **$3.33 million in potential direct fiber damage** under existing climate conditions — a damage ratio of **22.6%** of total fiber asset value. Under the SSP5 scenario, this rises marginally to **$3.37 million** (22.6% damage ratio), consistent with the negligible change in susceptibility patterns between scenarios.
+Applying a step-function damage curve calibrated to landslide susceptibility classes, we estimate **$3.33 million in potential direct fiber damage** under existing climate conditions, with an average damage ratio of **22.6% across affected fiber segments**. Under the SSP5 scenario, this rises marginally to **$3.37 million** (22.6% affected-segment damage ratio), consistent with the negligible change in susceptibility patterns between scenarios.
 
 <table>
 <tr>
@@ -449,7 +449,7 @@ The analysis for datacenters covers exposure only. Depth-damage curves and repla
 Congo has two submarine cable landing stations, both in Loango on the coast near Pointe-Noire: the WACS station, operational since 2012, and the 2Africa station, commissioned in 2026. Neither site exceeds the flood inundation threshold or the landslide susceptibility threshold under existing climate or SSP5. Because neither hazard exposes these sites, we do not include an exposure or vulnerability analysis for cable landing stations in this report.
 
 ![Map of African submarine cable systems in 2024, showing WACS, 2Africa, and other cables serving the continent's coastlines](images/african_undersea_cables.png)
-*African submarine cable systems as of 2024. The **West Africa Cable System** (WACS, since 2012) and the **2Africa** cable (2026) both land at Pointe-Noire, giving the Republic of Congo two independent international links to Europe, the Middle East, and Asia. The landing stations' favorable location on the coast — away from river floodplains — explains their clean bill of health in the hazard analysis. Map: Steve Song, CC BY 2.0.*
+*African submarine cable systems. The **West Africa Cable System** (WACS, since 2012) and the **2Africa** cable (2026) both land at Pointe-Noire, giving the Republic of Congo two independent international links to Europe, the Middle East, and Asia. The landing stations' favorable location on the coast — away from river floodplains — explains their clean bill of health in the hazard analysis. Map: Steve Song, CC BY 2.0.*
 
 ---
 
@@ -457,7 +457,7 @@ Congo has two submarine cable landing stations, both in Loango on the coast near
 
 The analysis presented here covers Congo's four core digital infrastructure asset classes — the fiber backbone, the mobile tower network, datacenter facilities, and submarine cable landing stations — across two hazard types and two climate scenarios. A few findings stand out as priorities for investment planning.
 
-The **northern backbone corridor** (Sangha and Likoula departments) carries the highest risk concentration in the network. Up to 17–19% of total fiber length falls within the 100-year flood hazard zone, the majority in the north where the network crosses Congo Basin tributary floodplains. A severe flood event could sever connectivity between the capital and entire northern regions at a replacement cost approaching $15 million. The tower network follows the same pattern: the highest-exposure sites are also in the north. Route diversification, targeted burial of aerial segments, and hardened duct infrastructure at flood-prone river crossings would reduce the most concentrated risks.
+The **northern backbone corridor** (Sangha and Likouala departments) carries the highest risk concentration in the network. Up to 17–19% of total fiber length falls within the 100-year flood hazard zone, the majority in the north where the network crosses Congo Basin tributary floodplains. A severe flood event could sever connectivity between the capital and entire northern regions at a replacement cost approaching $15 million. The tower network follows the same pattern: the highest-exposure sites are also in the north. Route diversification, targeted burial of aerial segments, and hardened duct infrastructure at flood-prone river crossings would reduce the most concentrated risks.
 
 **Datacenters in Brazzaville** present a specific concentration risk: three of the four Brazzaville-area sites, and 43% of the national datacenter inventory, sit within the flood hazard zone. These facilities host financial systems and government data, with no backup alternatives currently operating outside the at-risk area. The absence of damage curves means we cannot yet quantify the financial exposure, but the proximity to the Congo River warrants detailed site-level assessments and flood-proofing measures for the affected facilities.
 
