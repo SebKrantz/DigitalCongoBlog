@@ -68,6 +68,12 @@ A risk analysis is only as good as its underlying data. Assembling infrastructur
 
 **Mobile towers.** We have secured cell tower location data from the two main operators, Airtel Congo and MTN Congo, for a combined total of **1,594 tower sites** across the country. Together these cover the bulk of 3G and 4G connectivity, concentrated in Brazzaville and Pointe-Noire but with significant presence along major corridors.
 
+**Datacenter facilities and submarine cable landing stations.** The analysis also covers Congo's seven datacenter sites and the two submarine cable landing stations — the WACS station and the 2Africa station — both located in Loango on the coast near Pointe-Noire.
+
+![Digital infrastructure overview map for the Republic of Congo](images/infra_overview_map.png)
+
+*Digital infrastructure overview used in the risk analysis. Fiber routes are ARPCE national backbone data, covering existing and planned routes; tower sites come from Airtel, MTN, Congo Telecom and Helios records. The map plots 1,539 tower records after status and geocode filtering (183 Airtel, 539 MTN, 273 Congo Telecom, 544 Helios), seven datacenter sites, and two submarine cable landing stations, WACS and 2Africa. Department boundaries are from GADM; datacenter and landing-station coordinates were compiled from web research.*
+
 <table>
 <tr>
 <th>Fiber-optic cable being deployed in a duct trench</th>
@@ -80,8 +86,6 @@ A risk analysis is only as good as its underlying data. Assembling infrastructur
 </table>
 
 *Left: Fiber-optic cable and orange conduit pipes being laid in an open trench — the standard technique for burying backbone infrastructure. Congo's ~3,000 km Programme Câble National (PCN) was built using similar underground duct methods. Photo: Rubin Observatory/NSF/AURA, CC BY 4.0. Right: An MTN macro cell tower mast; MTN Congo and Airtel Congo together account for the 1,594 tower sites analyzed in this study. Photo: Anasskoko, CC BY-SA 4.0.*
-
-**Datacenter facilities and submarine cable landing stations.** The analysis also covers Congo's seven datacenter sites and the two submarine cable landing stations — the WACS station and the 2Africa station — both located in Loango on the coast near Pointe-Noire.
 
 **Hazard layers.** All hazard data is sourced from the **CDRI Global Infrastructure Risk Index (GIRI)** portal, which provides high-resolution, probabilistic global hazard maps. We use two hazard types across multiple scenarios:
 
