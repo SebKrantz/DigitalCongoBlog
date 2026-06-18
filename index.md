@@ -13,11 +13,31 @@ The Republic of Congo faces two vulnerabilities that rarely receive enough joint
 
 On the climate side, the picture is stark. Congo ranks among the most exposed countries on the Notre Dame Global Adaptation Initiative (ND-GAIN) index — 166th out of 182 countries — with limited institutional capacity to respond. The country's varied topography — coastal plains around Pointe-Noire, dense river basins threading north toward the Congo River, and elevated plateaus in the centre — creates exposure to a wide range of hazards. Seasonal flooding hits all departments with regularity. The Likoula and Sangha regions in the north are particularly prone to riverine inundation, while Brazzaville and Pointe-Noire face urban flooding amplified by inadequate drainage. Landslides threaten infrastructure along road and rail corridors in hilly terrain, and the coastal zone around Pointe-Noire is exposed to storm surge and long-term sea-level rise.
 
-![Aerial view of the Congo River at Pool Malebo, with the northern outskirts of Brazzaville visible in the foreground](images/congo_river_brazzaville.jpg)
-*Pool Malebo — the vast, shallow lake formed where the Congo River widens between Brazzaville (Republic of Congo, right foreground) and Kinshasa (DRC). In late 2023, rising waters from the Congo River and its tributaries inundated nine of the Republic of Congo's twelve departments, affecting 1.8 million people and reaching the highest level recorded since 1961. Photo: Dicklyon, CC BY-SA 4.0, Wikimedia Commons.*
+<table>
+<tr>
+<th>Aerial view — Pool Malebo, Brazzaville &amp; Kinshasa</th>
+<th>Satellite view — Pool Malebo from space</th>
+</tr>
+<tr>
+<td><img src="images/congo_river_brazzaville.jpg" width="100%"/></td>
+<td><img src="images/brazzaville_satellite.jpg" width="100%"/></td>
+</tr>
+</table>
 
-![Satellite image of Brazzaville and Kinshasa separated by the Congo River's Pool Malebo](images/brazzaville_satellite.jpg)
-*The Congo River's Pool Malebo, separating Brazzaville (Republic of Congo, north bank) and Kinshasa (DRC, south bank). The wide, low-lying floodplain visible on both banks explains why riverine flooding is a recurring and severe threat for the capital region. Source: NASA/ISS, public domain.*
+*Pool Malebo — the vast, shallow lake formed where the Congo River widens between Brazzaville (right foreground, Republic of Congo) and Kinshasa (DRC). The wide, low-lying floodplain on both banks explains why riverine flooding is a recurring and severe threat for the capital region. In late 2023, nine of Congo's twelve departments were inundated, affecting 1.8 million people. Left: Dicklyon, CC BY-SA 4.0, Wikimedia Commons. Right: NASA/ISS, public domain.*
+
+<table>
+<tr>
+<th>Urban flooding — Kinshasa, April 2025</th>
+<th>Landslide damage — Kinshasa, December 2022</th>
+</tr>
+<tr>
+<td><img src="images/flooding.png" width="100%"/></td>
+<td><img src="images/landslide.png" width="100%"/></td>
+</tr>
+</table>
+
+*Left: Residents wade through flooded streets in Kinshasa after torrential rains in April 2025 overwhelmed the Ndjili River, killing at least 33 people. Photo: Samy Ntumba Shambuyi/AP. Right: A massive landslide tears apart a hillside road in Kinshasa after heavy rains on 12–13 December 2022, killing over 160 people and destroying hundreds of homes. Photo: Government of DRC, Copernicus Emergency Management Service.*
 
 <table>
 <tr>
@@ -50,16 +70,16 @@ A risk analysis is only as good as its underlying data. Assembling infrastructur
 
 <table>
 <tr>
-<th>Telecommunications infrastructure — Republic of Congo</th>
+<th>Fiber-optic cable being deployed in a duct trench</th>
 <th>A typical MTN macro cell tower mast</th>
 </tr>
 <tr>
-<td><img src="images/infra_map.jpg" width="100%"/></td>
+<td><img src="images/fiber_optic.jpg" width="100%"/></td>
 <td><img src="images/mtn_tower.jpg" width="100%"/></td>
 </tr>
 </table>
 
-*Left: The national telecommunications infrastructure map compiled by Airtel Congo — showing backbone fiber routes (colored lines by segment type), tower and radio sites by category, and Congo's administrative departments. Source: Airtel Congo / World Bank QII Partnership. Right: An MTN macro cell tower mast; MTN Congo and Airtel Congo together account for the 1,594 tower sites analyzed in this study. Photo: Anasskoko, CC BY-SA 4.0.*
+*Left: Fiber-optic cable and orange conduit pipes being laid in an open trench — the standard technique for burying backbone infrastructure. Congo's ~3,000 km Programme Câble National (PCN) was built using similar underground duct methods. Photo: Rubin Observatory/NSF/AURA, CC BY 4.0. Right: An MTN macro cell tower mast; MTN Congo and Airtel Congo together account for the 1,594 tower sites analyzed in this study. Photo: Anasskoko, CC BY-SA 4.0.*
 
 **Datacenter facilities and submarine cable landing stations.** The analysis also covers Congo's seven datacenter sites and the two submarine cable landing stations — the WACS station and the 2Africa station — both located in Loango on the coast near Pointe-Noire.
 
