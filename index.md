@@ -13,7 +13,24 @@ The Republic of Congo faces two vulnerabilities that rarely receive enough joint
 
 On the climate side, the picture is stark. Congo ranks among the most exposed countries on the Notre Dame Global Adaptation Initiative (ND-GAIN) index — 166th out of 182 countries — with limited institutional capacity to respond. The country's varied topography — coastal plains around Pointe-Noire, dense river basins threading north toward the Congo River, and elevated plateaus in the centre — creates exposure to a wide range of hazards. Seasonal flooding hits all departments with regularity. The Likoula and Sangha regions in the north are particularly prone to riverine inundation, while Brazzaville and Pointe-Noire face urban flooding amplified by inadequate drainage. Landslides threaten infrastructure along road and rail corridors in hilly terrain, and the coastal zone around Pointe-Noire is exposed to storm surge and long-term sea-level rise.
 
-*[Map placeholder: country hazard overview — flood zones, landslide risk, key cities]*
+![Flooding in a Congo Basin village during the seasonal rains](images/congo_flooding.jpg)
+*Flooding in a Congo Basin village during the rainy season. In late 2023, rising waters from the Congo River and its tributaries inundated nine of the Republic of Congo's twelve departments — affecting 1.8 million people and reaching the highest level recorded since 1961. Photo: Wikimedia Commons, CC BY-SA 4.0.*
+
+![Satellite image of Brazzaville and Kinshasa separated by the Congo River's Pool Malebo](images/brazzaville_satellite.jpg)
+*The Congo River's Pool Malebo, separating Brazzaville (Republic of Congo, north bank) and Kinshasa (DRC, south bank). The wide, low-lying floodplain visible on both banks explains why riverine flooding is a recurring and severe threat for the capital region. Source: NASA/ISS, public domain.*
+
+<table>
+<tr>
+<th>100-year flood hazard — existing climate</th>
+<th>Landslide susceptibility — existing climate</th>
+</tr>
+<tr>
+<td><img src="results/figures/fiber_flood100y_100mm_exposure_map.png" width="100%"/></td>
+<td><img src="results/figures/fiber_landslides_exposure_map.png" width="100%"/></td>
+</tr>
+</table>
+
+*The two primary hazards analyzed across the Republic of Congo, with the national fiber backbone overlaid. The deep-blue zones in the north (Likouala, Sangha) mark the highest riverine flood inundation depths along Congo Basin tributaries. Elevated landslide susceptibility (right map) concentrates across the interior Plateaux and Pool departments.*
 
 On the digital side, the Republic of Congo has made genuine progress. Roughly 3,000 km of national fiber backbone (the Programme Câble National, PCN) connects the two main cities and reaches several regional centres. Mobile coverage has expanded significantly, with Airtel and MTN operating the two largest tower networks. The country gained a second international submarine cable access point when the 2Africa cable landed at Pointe-Noire, supplementing the existing West Africa Cable System (WACS). Seven datacenter facilities — five operational, one under construction in Brazzaville, and one planned backup site in Oyo — anchor the country's cloud and data hosting capacity.
 
@@ -31,7 +48,18 @@ A risk analysis is only as good as its underlying data. Assembling infrastructur
 
 **Mobile towers.** We have secured cell tower location data from the two main operators, Airtel Congo and MTN Congo, for a combined total of **1,594 tower sites** across the country. Together these cover the bulk of 3G and 4G connectivity, concentrated in Brazzaville and Pointe-Noire but with significant presence along major corridors.
 
-*[Map placeholder: tower locations by operator, overlaid on administrative boundaries]*
+<table>
+<tr>
+<th>Telecommunications infrastructure — Republic of Congo</th>
+<th>A typical MTN macro cell tower mast</th>
+</tr>
+<tr>
+<td><img src="images/infra_map.jpg" width="100%"/></td>
+<td><img src="images/mtn_tower.jpg" width="100%"/></td>
+</tr>
+</table>
+
+*Left: The national telecommunications infrastructure map compiled by Airtel Congo — showing backbone fiber routes (colored lines by segment type), tower and radio sites by category, and Congo's administrative departments. Source: Airtel Congo / World Bank QII Partnership. Right: An MTN macro cell tower mast; MTN Congo and Airtel Congo together account for the 1,594 tower sites analyzed in this study. Photo: Anasskoko, CC BY-SA 4.0.*
 
 **Datacenter facilities and submarine cable landing stations.** The analysis also covers Congo's seven datacenter sites and the two submarine cable landing stations — the WACS station and the 2Africa station — both located in Loango on the coast near Pointe-Noire.
 
@@ -395,6 +423,9 @@ The analysis for datacenters covers exposure only. Depth-damage curves and repla
 ### Submarine cable landing stations
 
 Congo has two submarine cable landing stations, both in Loango on the coast near Pointe-Noire: the WACS station, operational since 2012, and the 2Africa station, commissioned in 2026. Neither site exceeds the flood inundation threshold or the landslide susceptibility threshold under existing climate or SSP5. Because neither hazard exposes these sites, we do not include an exposure or vulnerability analysis for cable landing stations in this report.
+
+![Map of African submarine cable systems in 2024, showing WACS, 2Africa, and other cables serving the continent's coastlines](images/african_undersea_cables.png)
+*African submarine cable systems as of 2024. The **West Africa Cable System** (WACS, since 2012) and the **2Africa** cable (2026) both land at Pointe-Noire, giving the Republic of Congo two independent international links to Europe, the Middle East, and Asia. The landing stations' favorable location on the coast — away from river floodplains — explains their clean bill of health in the hazard analysis. Map: Steve Song, CC BY 2.0.*
 
 ---
 
