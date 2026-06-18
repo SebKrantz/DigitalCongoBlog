@@ -154,7 +154,7 @@ The screenshots below show the app in action on the Republic of Congo fiber netw
 
 ![Screenshot of the Infrastructure Risk Analyzer — Exposure Analysis mode](images/app_exposure_analysis.png)
 
-**Vulnerability analysis view** — with the vulnerability toggle enabled, the user uploads a flood damage curve CSV and enters a fiber replacement cost. The same map now shades each segment by its estimated damage percentage, and the bar chart extends to show estimated total damage cost (USD) alongside exposure and vulnerability rates.
+**Vulnerability analysis view** — with the vulnerability toggle enabled, the user uploads a flood damage curve CSV and enters a fiber replacement cost (per meter). The same map now shades each segment by its estimated damage percentage, and the bar chart extends to show estimated total damage cost (USD) alongside exposure and vulnerability rates.
 
 ![Screenshot of the Infrastructure Risk Analyzer — Vulnerability Analysis mode](images/app_vulnerability_analysis.png)
 
