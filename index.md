@@ -74,7 +74,7 @@ A risk analysis is only as good as its underlying data. Assembling infrastructur
 <th>A typical MTN macro cell tower mast</th>
 </tr>
 <tr>
-<td><img src="images/fiber_optic.jpg" width="100%"/></td>
+<td><img src="images/fiber_optic.jpg" width="100%" style="margin-bottom:3px; border-radius:0;"/><img src="images/fiber_optic_large.png" width="100%"/></td>
 <td><img src="images/mtn_tower.jpg" width="100%"/></td>
 </tr>
 </table>
