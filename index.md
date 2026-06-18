@@ -3,10 +3,6 @@ layout: page
 title: "When the Rains Come: Mapping Climate Risk to Digital Infrastructure in the Republic of Congo"
 ---
 
-*Sebastian Krantz and Thomas Birk | World Bank QII Partnership*
-
----
-
 Digital infrastructure is the backbone of modern economies — but that backbone can buckle when floodwaters rise, hillsides slip, or the ground shakes. In many low- and middle-income countries, the cables and towers that carry data are still largely invisible to climate planners. This post describes our work to change that in the Republic of Congo, where we combine geospatial hazard data with operator network records and a new automated analysis tool to map where Congo's digital infrastructure is most exposed, and estimate what a severe event would cost.
 
 ---

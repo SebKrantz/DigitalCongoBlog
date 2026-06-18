@@ -6,9 +6,7 @@ description: >
 author: Sebastian Krantz & Thomas Birk
 
 theme: minima
-
-minima:
-  skin: classic
+header_pages: []
 
 plugins:
   - jekyll-feed
