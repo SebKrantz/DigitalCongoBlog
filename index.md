@@ -13,8 +13,8 @@ The Republic of Congo faces two vulnerabilities that rarely receive enough joint
 
 On the climate side, the picture is stark. Congo ranks among the most exposed countries on the Notre Dame Global Adaptation Initiative (ND-GAIN) index — 166th out of 182 countries — with limited institutional capacity to respond. The country's varied topography — coastal plains around Pointe-Noire, dense river basins threading north toward the Congo River, and elevated plateaus in the centre — creates exposure to a wide range of hazards. Seasonal flooding hits all departments with regularity. The Likoula and Sangha regions in the north are particularly prone to riverine inundation, while Brazzaville and Pointe-Noire face urban flooding amplified by inadequate drainage. Landslides threaten infrastructure along road and rail corridors in hilly terrain, and the coastal zone around Pointe-Noire is exposed to storm surge and long-term sea-level rise.
 
-![Flooding in a Congo Basin village during the seasonal rains](images/congo_flooding.jpg)
-*Flooding in a Congo Basin village during the rainy season. In late 2023, rising waters from the Congo River and its tributaries inundated nine of the Republic of Congo's twelve departments — affecting 1.8 million people and reaching the highest level recorded since 1961. Photo: Wikimedia Commons, CC BY-SA 4.0.*
+![Aerial view of the Congo River at Pool Malebo, with the northern outskirts of Brazzaville visible in the foreground](images/congo_river_brazzaville.jpg)
+*Pool Malebo — the vast, shallow lake formed where the Congo River widens between Brazzaville (Republic of Congo, right foreground) and Kinshasa (DRC). In late 2023, rising waters from the Congo River and its tributaries inundated nine of the Republic of Congo's twelve departments, affecting 1.8 million people and reaching the highest level recorded since 1961. Photo: Dicklyon, CC BY-SA 4.0, Wikimedia Commons.*
 
 ![Satellite image of Brazzaville and Kinshasa separated by the Congo River's Pool Malebo](images/brazzaville_satellite.jpg)
 *The Congo River's Pool Malebo, separating Brazzaville (Republic of Congo, north bank) and Kinshasa (DRC, south bank). The wide, low-lying floodplain visible on both banks explains why riverine flooding is a recurring and severe threat for the capital region. Source: NASA/ISS, public domain.*
@@ -25,12 +25,12 @@ On the climate side, the picture is stark. Congo ranks among the most exposed co
 <th>Landslide susceptibility — existing climate</th>
 </tr>
 <tr>
-<td><img src="results/figures/fiber_flood100y_100mm_exposure_map.png" width="100%"/></td>
-<td><img src="results/figures/fiber_landslides_exposure_map.png" width="100%"/></td>
+<td><img src="images/floowing_brazzaville_100year.png" width="100%"/></td>
+<td><img src="images/landslides_brazzaville.png" width="100%"/></td>
 </tr>
 </table>
 
-*The two primary hazards analyzed across the Republic of Congo, with the national fiber backbone overlaid. The deep-blue zones in the north (Likouala, Sangha) mark the highest riverine flood inundation depths along Congo Basin tributaries. Elevated landslide susceptibility (right map) concentrates across the interior Plateaux and Pool departments.*
+*Previews from the [Infrastructure Risk Analyzer](https://datanalytics.worldbank.org/infra-risk-analyzer/), zoomed to the Brazzaville / Pool Malebo area. Left: 100-year riverine flood hazard (inundation depth in mm, blue-to-red scale) — the wide Congo River floodplain is clearly visible around Pool Malebo. Right: precipitation-triggered landslide susceptibility (class 1–5) — elevated susceptibility (orange/red) concentrates on the hilly terrain south and east of the capital.*
 
 On the digital side, the Republic of Congo has made genuine progress. Roughly 3,000 km of national fiber backbone (the Programme Câble National, PCN) connects the two main cities and reaches several regional centres. Mobile coverage has expanded significantly, with Airtel and MTN operating the two largest tower networks. The country gained a second international submarine cable access point when the 2Africa cable landed at Pointe-Noire, supplementing the existing West Africa Cable System (WACS). Seven datacenter facilities — five operational, one under construction in Brazzaville, and one planned backup site in Oyo — anchor the country's cloud and data hosting capacity.
 
